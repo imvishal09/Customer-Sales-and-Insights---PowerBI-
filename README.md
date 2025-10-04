@@ -1,71 +1,50 @@
-🧠 Customer Sales and Loyalty Insights Dashboard
+# Customer Sales and Insights Dashboard
 
-📊 Overview
+![Customer Insights Dashboard](https://raw.githubusercontent.com/imvishal09/PowerBI_Customer_Sales_and_Insights/refs/heads/main/customer%20insights.png)
 
-This Power BI dashboard provides a detailed analysis of customer purchasing behaviour, product category performance, and loyalty patterns using the Customer Personality Analysis dataset.
-It highlights how spending, recency, and demographics influence customer value, helping identify high-value customers and guiding strategies for customer retention and targeted marketing.
-
-🎯 Objectives
-	•	Understand total and average revenue performance.
-	•	Segment customers by spending behaviour (Low, Medium, High, VIP).
-	•	Analyse product category sales to identify top-performing items.
-	•	Examine channel preferences (Web, Store, Catalogue, Deals) across age groups.
-	•	Explore recency versus spend to evaluate customer loyalty and retention risks.
-
-🍷 Product Category Sales Distribution
-
-A tree map visualising the contribution of each product category (Wine, Meat, Gold, Sweets, etc.) to overall sales.
-
-Insight: Identifies which product categories drive the most revenue and where to focus sales and marketing efforts.
+This Power BI project visualises customer purchasing behaviour, marketing campaign performance, and overall sales trends. It helps identify key customer segments and provides actionable insights to support data-driven decision-making.
 
 
-👥 Customer Distribution by Value Segment
+### 📊 Key Features
 
-A donut chart displaying the proportion of customers in each spending segment — Low, Medium, High, and VIP.
-
-Insight: Reveals the concentration of revenue among high-value customers, often following the 80/20 rule (where a small portion of customers generate most of the revenue).
-
-
-🛒 Purchase Channel Preferences by Age
-
-A stacked bar chart comparing purchasing channels — Catalogue, Deals, Store, and Web — across age groups.
-
-Insight: Demonstrates generational differences in purchasing behaviour, supporting targeted campaign design and channel strategy optimisation.
+- **Customer Segmentation:** Analyses customers based on purchasing patterns, recency, frequency, and monetary value (RFM model).  
+- **Campaign Performance:** Evaluates the success of marketing campaigns across different channels and time periods.  
+- **Sales Overview:** Tracks revenue, number of deals, and product performance across customer demographics.  
+- **Recency vs Spend Analysis:** Scatter plots that help visualise customer loyalty and spending patterns.  
+- **Interactive Filters:** Allows dynamic exploration by education level, marital status, and income group.  
 
 
-💎 Total Spend vs Recency by Loyalty Segment
+### 🎯 Purpose
 
-A scatter plot mapping Total Spend (Y-axis) against Recency (X-axis), segmented by Loyalty Category (Loyal, At Risk, Lost).
-
-Insight:
-	•	Loyal customers purchase frequently and spend more.
-	•	At-risk customers have reduced recent activity but previously high spend.
-	•	Lost customers show high recency and low engagement — opportunities for reactivation campaigns.
+This dashboard aims to support marketing and business strategy teams by providing insights into:  
+- Which customer groups are the most valuable.  
+- How campaign performance drives sales outcomes.  
+- Where to allocate future marketing budgets effectively.  
 
 
-⚙️ Data Source and Preparation
+### 🧠 Data Model Overview
 
-Dataset: Customer Personality Analysis — Kaggle
-Tool Used: Power BI Desktop
-
-Data Preparation Steps:
-	•	Cleaned and formatted data in Power Query.
-	•	Unpivoted product category columns for flexible analysis.
-	•	Created calculated columns for:
-	•	TotalSpend — total spend per customer
-	•	CustomerSegment — value-based segmentation
-	•	LoyaltySegment — recency-based loyalty grouping
+- **Transformations:** Performed in Power Query (data cleaning, feature creation, and unpivoting).  
+- **Measures:** Created in DAX for total revenue, average recency, campaign acceptance rate, and customer segmentation.  
 
 
-🚀 Key Insights
-	•	A small group of loyal, high-value customers contributes disproportionately to total revenue.
-	•	Wine and Meat are the highest-performing product categories.
-	•	Older demographics prefer catalogue and store purchases, while younger groups engage more online.
-	•	Recency analysis highlights retention opportunities through targeted loyalty campaigns.
+### 📂 Data Source
+
+- **Dataset:** [Customer Personality Analysis – Kaggle](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis)  
+- **Description:** Contains customer demographic data, purchasing behaviour, product category spending, marketing campaign responses, and channel usage.  
+- **Usage:** Used to model customer value (RFM), segment customers, and analyse campaign effectiveness.  
 
 
-🧩 Tools and Techniques
-	•	Power BI Desktop for visualisation and report design
-	•	DAX for calculated columns and performance metrics
-	•	Power Query for data cleaning and transformation
-	•	Data storytelling principles for visual communication
+### 🪄 Tools and Techniques
+
+- **Power BI Desktop** for visualisation and modelling.  
+- **DAX (Data Analysis Expressions)** for calculated measures.  
+- **Power Query** for data cleaning and transformation.  
+- **Excel** for preliminary analysis and verification.  
+
+
+### 💡 Insights Highlight
+
+- Customers with **high recency and high spending** are prime targets for loyalty programs.  
+- Campaign acceptance is highest among **mid-income, married customers**.  
+- Certain product categories drive the majority of sales despite fewer transactions — indicating potential for upselling.
